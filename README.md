@@ -1,4 +1,33 @@
-histo
-=====
+Installation
+------------
 
-Statistical histograms based on Sturges rule
+    pip install histo
+
+Usage
+-----
+
+Example of usage:
+
+    $ printf "1\n2" | histo
+    ------------------
+    Range |  Frequency
+    ------------------
+    1 - 1 |  50.0000 %
+    1 - 2 |  50.0000 %
+    ------------------
+
+One more:
+
+    $ python -c "for x in range(100): print x" | histo
+    --------------------
+      Range |  Frequency
+    --------------------
+     0 - 12 |  13.0000 %
+    12 - 24 |  11.0000 %
+    24 - 37 |  13.0000 %
+    37 - 49 |  12.0000 %
+    49 - 61 |  12.0000 %
+    61 - 74 |  13.0000 %
+    74 - 86 |  12.0000 %
+    86 - 99 |  14.0000 %
+    --------------------
